@@ -1,0 +1,2 @@
+This is a headphone amplifier for IAMs built with Puca DSP board. 
+It enables microphones for ambient sound monitoring, combines with line in and runs 3-band brickwall limiter to protect user from transient spikes (i.e. dropped mikes and acoustic drums)
