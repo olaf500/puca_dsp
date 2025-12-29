@@ -112,7 +112,7 @@ static void sine_wave(void *args)             // function to generate a test sin
 
 static void omni_mics(void) {
     int SR = 48000;
-    int BS = 2048;
+    int BS = 32;
     picodsp_mics_omninew* DSP = new picodsp_mics_omninew(SR,BS);
     
     DSP->start();
@@ -133,11 +133,11 @@ void app_main() {
     wm8978.init();            // WM8978 codec initialisation
     wm8978.addaCfg(1,1);      // enable the adc and the dac
     wm8978.inputCfg(1,1,0);   // Enable linein
-    wm8978.micGain(40);
-    wm8978.lineinGain(3);
+    wm8978.micGain(30);
+    wm8978.lineinGain(6);
     wm8978.outputCfg(1,0);    // Enable dac out, no bypass.
     wm8978.spkVolSet(0);      // speaker volume not required, set to 0.
-    wm8978.hpVolSet(40,40);   // headphone volume
+    wm8978.hpVolSet(30,30);   // headphone volume
     wm8978.sampleRate(0);     // set sample rate to 48kHz
     wm8978.i2sCfg(2,0);       // I2S format Philips, 16bit
 
