@@ -42,3 +42,4 @@
 
 # build directoris
 build/
+.vscode/
