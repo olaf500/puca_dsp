@@ -112,7 +112,7 @@ static void sine_wave(void *args)             // function to generate a test sin
 
 static void omni_mics(void) {
     int SR = 48000;
-    int BS = 32;
+    int BS = 48;
     picodsp_mics_omninew* DSP = new picodsp_mics_omninew(SR,BS);
     
     DSP->start();
